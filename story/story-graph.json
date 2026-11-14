@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "title": "Signal Lost (mock)",
+  "startNodeId": "intro",
+  "nodes": [
+    {
+      "id": "intro",
+      "title": "Signal Lost",
+      "videoUrl": "/media/mock/intro.mp4",
+      "isEndingNode": false,
+      "endingType": null,
+      "freezeAt": null,
+      "choices": ["room", "corridor"],
+      "choiceALabel": "ENTER THE ROOM",
+      "choiceBLabel": "RUN AWAY",
+      "position": { "x": 300, "y": 0 }
+    },
+    {
+      "id": "room",
+      "title": "The Room",
+      "videoUrl": "/media/mock/room.mp4",
+      "isEndingNode": false,
+      "endingType": null,
+      "freezeAt": null,
+      "choices": ["end_unplug", "end_screen"],
+      "choiceALabel": "PULL THE PLUG",
+      "choiceBLabel": "READ THE SCREEN",
+      "position": { "x": 80, "y": 260 }
+    },
+    {
+      "id": "corridor",
+      "title": "The Corridor",
+      "videoUrl": "/media/mock/corridor.mp4",
+      "isEndingNode": false,
+      "endingType": null,
+      "freezeAt": null,
+      "choices": ["end_hide", "room"],
+      "choiceALabel": "HIDE",
+      "choiceBLabel": "GO BACK",
+      "position": { "x": 540, "y": 260 }
+    },
+    {
+      "id": "end_unplug",
+      "title": "Power Cut",
+      "videoUrl": "/media/mock/end_unplug.mp4",
+      "isEndingNode": true,
+      "endingType": "GOOD",
+      "freezeAt": null,
+      "choices": [],
+      "choiceALabel": "",
+      "choiceBLabel": "",
+      "position": { "x": -60, "y": 540 }
+    },
+    {
+      "id": "end_screen",
+      "title": "It Saw You",
+      "videoUrl": "/media/mock/end_screen.mp4",
+      "isEndingNode": true,
+      "endingType": "BAD",
+      "freezeAt": null,
+      "choices": [],
+      "choiceALabel": "",
+      "choiceBLabel": "",
+      "position": { "x": 240, "y": 540 }
+    },
+    {
+      "id": "end_hide",
+      "title": "No One Came",
+      "videoUrl": "/media/mock/end_hide.mp4",
+      "isEndingNode": true,
+      "endingType": "BAD",
+      "freezeAt": null,
+      "choices": [],
+      "choiceALabel": "",
+      "choiceBLabel": "",
+      "position": { "x": 560, "y": 540 }
+    }
+  ]
+}
